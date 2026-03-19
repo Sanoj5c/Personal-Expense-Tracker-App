@@ -24,7 +24,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.tracker"
-        minSdk = 21
+        minSdk = 23
         targetSdk = 34           // Updated to match compileSdk
         versionCode = 1
         versionName = "1.0"

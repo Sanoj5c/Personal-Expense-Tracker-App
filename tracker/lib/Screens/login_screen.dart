@@ -67,19 +67,16 @@ class _LoginScreenState extends State<LoginScreen> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  // Icon
                   Container(
                     padding: const EdgeInsets.all(20),
                     decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(0.2),
+                      color: Colors.white.withValues(alpha: 0.2),
                       shape: BoxShape.circle,
                     ),
                     child: const Icon(Icons.account_balance_wallet,
                         size: 60, color: Colors.white),
                   ),
                   const SizedBox(height: 24),
-
-                  // Title
                   const Text('Expense Tracker',
                       style: TextStyle(
                           fontSize: 28,
@@ -89,8 +86,6 @@ class _LoginScreenState extends State<LoginScreen> {
                   const Text('Login to your account',
                       style: TextStyle(fontSize: 16, color: Colors.white70)),
                   const SizedBox(height: 40),
-
-                  // Card
                   Container(
                     padding: const EdgeInsets.all(24),
                     decoration: BoxDecoration(
@@ -98,7 +93,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       borderRadius: BorderRadius.circular(20),
                       boxShadow: [
                         BoxShadow(
-                          color: Colors.black.withOpacity(0.1),
+                          color: Colors.black.withValues(alpha: 0.1),
                           blurRadius: 20,
                           offset: const Offset(0, 10),
                         )
@@ -106,7 +101,6 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                     child: Column(
                       children: [
-                        // Email
                         TextField(
                           controller: _emailController,
                           keyboardType: TextInputType.emailAddress,
@@ -124,8 +118,6 @@ class _LoginScreenState extends State<LoginScreen> {
                           ),
                         ),
                         const SizedBox(height: 16),
-
-                        // Password
                         TextField(
                           controller: _passwordController,
                           obscureText: _obscurePassword,
@@ -153,8 +145,6 @@ class _LoginScreenState extends State<LoginScreen> {
                           ),
                         ),
                         const SizedBox(height: 24),
-
-                        // Login Button
                         SizedBox(
                           width: double.infinity,
                           height: 50,
@@ -179,8 +169,6 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   ),
                   const SizedBox(height: 24),
-
-                  // Sign up link
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [

@@ -76,18 +76,16 @@ class _SignupScreenState extends State<SignupScreen> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  // Icon
                   Container(
                     padding: const EdgeInsets.all(20),
                     decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(0.2),
+                      color: Colors.white.withValues(alpha: 0.2),
                       shape: BoxShape.circle,
                     ),
                     child: const Icon(Icons.person_add,
                         size: 60, color: Colors.white),
                   ),
                   const SizedBox(height: 24),
-
                   const Text('Create Account',
                       style: TextStyle(
                           fontSize: 28,
@@ -97,8 +95,6 @@ class _SignupScreenState extends State<SignupScreen> {
                   const Text('Sign up to get started',
                       style: TextStyle(fontSize: 16, color: Colors.white70)),
                   const SizedBox(height: 40),
-
-                  // Card
                   Container(
                     padding: const EdgeInsets.all(24),
                     decoration: BoxDecoration(
@@ -106,7 +102,7 @@ class _SignupScreenState extends State<SignupScreen> {
                       borderRadius: BorderRadius.circular(20),
                       boxShadow: [
                         BoxShadow(
-                          color: Colors.black.withOpacity(0.1),
+                          color: Colors.black.withValues(alpha: 0.1),
                           blurRadius: 20,
                           offset: const Offset(0, 10),
                         )
@@ -114,7 +110,6 @@ class _SignupScreenState extends State<SignupScreen> {
                     ),
                     child: Column(
                       children: [
-                        // Email
                         TextField(
                           controller: _emailController,
                           keyboardType: TextInputType.emailAddress,
@@ -132,8 +127,6 @@ class _SignupScreenState extends State<SignupScreen> {
                           ),
                         ),
                         const SizedBox(height: 16),
-
-                        // Password
                         TextField(
                           controller: _passwordController,
                           obscureText: _obscurePassword,
@@ -161,8 +154,6 @@ class _SignupScreenState extends State<SignupScreen> {
                           ),
                         ),
                         const SizedBox(height: 16),
-
-                        // Confirm Password
                         TextField(
                           controller: _confirmPasswordController,
                           obscureText: _obscurePassword,
@@ -180,8 +171,6 @@ class _SignupScreenState extends State<SignupScreen> {
                           ),
                         ),
                         const SizedBox(height: 24),
-
-                        // Signup Button
                         SizedBox(
                           width: double.infinity,
                           height: 50,
@@ -206,8 +195,6 @@ class _SignupScreenState extends State<SignupScreen> {
                     ),
                   ),
                   const SizedBox(height: 24),
-
-                  // Login link
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
